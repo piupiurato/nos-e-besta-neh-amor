@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nós é Besta Né, Amor? 😂❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 1em;
+      color: #d63384;
+      text-shadow: 1px 1px 2px #ffb3c6;
+    }
+
+    .text-box {
+      margin: 2em auto;
+      padding: 2em;
+      width: 80%;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff4d88;
+      animation: floatUp 10s linear infinite;
+      font-size: 2em;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(100vh) rotate(0deg); }
+      to { transform: translateY(-10vh) rotate(360deg); }
+    }
+
+    .btn-music {
+      background: #ff66a3;
+      color: white;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1em;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      margin: 2em 0;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin: 1em auto;
+      width: 90%;
+    }
+
+    .carousel img {
+      height: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Nós é Besta Né, Amor? 😂❤️</h1>
+
+  <div class="text-box">
+    <p><strong>"Ficou muito bom… Eu quero muito."</strong></p>
+    <p>E assim começou uma confusão deliciosa.</p>
+    <p>
+      — "Não é a mesma tatuagem!"<br>
+      — "Eu achei que ele era você!"<br>
+      — "Não é nós!"<br>
+      — "Agora ela, muda a blusa e a tatuagem..."
+    </p>
+    <p>E no fim...</p>
+    <p><strong>"NÓS É BESTA NÉ AMOR?"</strong> 😂❤️</p>
+    <p>Entre montagens, beijos imaginados e abraços prometidos, uma coisa é certa:<br>
+    <strong>O que temos é tão verdadeiro que até nas montagens parece real.</strong></p>
+    <p>— Te amo, minha confusão favorita. 💖</p>
+  </div>
+
+  <button class="btn-music" onclick="document.getElementById('bg-music').play()">▶️ Ligar Música</button>
+
+  <div class="carousel">
+    <img src="2.jpg" alt="Foto 2">
+    <img src="1.jpg" alt="Foto 1">
+    <img src="3.jpg" alt="Foto 3">
+    <!-- podes adicionar mais fotos aqui -->
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="hearts">
+    <!-- corações flutuantes -->
+    <div class="heart" style="left:10%">💖</div>
+    <div class="heart" style="left:30%">💘</div>
+    <div class="heart" style="left:50%">💗</div>
+    <div class="heart" style="left:70%">💕</div>
+    <div class="heart" style="left:90%">❤️</div>
+  </div>
+</body>
+</html>
